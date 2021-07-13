@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5">
+
+
+    <View
+        android:id="@+id/viewHomeBlueBar"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#4263EC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivHomeUser"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewHomeBlueBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewHomeBlueBar"
+        app:srcCompat="@drawable/ic_user" />
+
+    <TextView
+        android:id="@+id/tvHomeHeyUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Hey Sofia,"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/ivHomeUser"
+        app:layout_constraintTop_toTopOf="@+id/ivHomeUser" />
+
+    <TextView
+        android:id="@+id/tvHomeWelcomeBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ivHomeUser"
+        app:layout_constraintStart_toEndOf="@+id/ivHomeUser" />
+
+    <TextView
+        android:id="@+id/tvHomeToday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Today"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/viewHomeTask1"
+        app:layout_constraintStart_toStartOf="@+id/viewHomeTask1" />
+
+    <View
+        android:id="@+id/viewHomeTask1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/et_white_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewHomeBlueBar" />
+
+    <RadioButton
+        android:id="@+id/btnHomeRadioMeeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewHomeTask1"
+        app:layout_constraintStart_toStartOf="@+id/viewHomeTask1"
+        app:layout_constraintTop_toTopOf="@+id/viewHomeTask1" />
+
+    <TextView
+        android:id="@+id/tvHomeMeeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:text="Meeting with Omar"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnHomeRadioMeeting"
+        app:layout_constraintStart_toEndOf="@+id/btnHomeRadioMeeting" />
+
+    <TextView
+        android:id="@+id/tvHomeMeetingTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="08:00 AM"
+        app:layout_constraintStart_toEndOf="@+id/btnHomeRadioMeeting"
+        app:layout_constraintTop_toTopOf="@+id/btnHomeRadioMeeting" />
+
+    <View
+        android:id="@+id/viewHomeTask2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/et_white_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewHomeTask1" />
+
+    <RadioButton
+        android:id="@+id/btnHomeRadioWebinar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewHomeTask2"
+        app:layout_constraintStart_toStartOf="@+id/viewHomeTask2"
+        app:layout_constraintTop_toTopOf="@+id/viewHomeTask2" />
+
+    <TextView
+        android:id="@+id/tvHomeWebinar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:text="Webinar on Gradle API"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnHomeRadioWebinar"
+        app:layout_constraintStart_toEndOf="@+id/btnHomeRadioWebinar" />
+
+    <TextView
+        android:id="@+id/tvHomeWebinarTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="01:00 PM"
+        app:layout_constraintStart_toEndOf="@+id/btnHomeRadioWebinar"
+        app:layout_constraintTop_toTopOf="@+id/btnHomeRadioWebinar" />
+
+    <TextView
+        android:id="@+id/tvHomeTomorrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Tomorrow"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/viewHomeTask3"
+        app:layout_constraintStart_toStartOf="@+id/viewHomeTask3" />
+
+    <View
+        android:id="@+id/viewHomeTask3"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/et_white_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewHomeTask2" />
+
+    <RadioButton
+        android:id="@+id/btnHomeRadioFrontEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewHomeTask3"
+        app:layout_constraintStart_toStartOf="@+id/viewHomeTask3"
+        app:layout_constraintTop_toTopOf="@+id/viewHomeTask3" />
+
+    <TextView
+        android:id="@+id/tvHomeFrontEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="01:00 PM"
+        app:layout_constraintStart_toEndOf="@+id/btnHomeRadioFrontEnd"
+        app:layout_constraintTop_toTopOf="@+id/btnHomeRadioFrontEnd" />
+
+
+    <TextView
+        android:id="@+id/tvHomeFrontEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:text="Front End Development"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnHomeRadioFrontEnd"
+        app:layout_constraintStart_toEndOf="@+id/btnHomeRadioFrontEnd" />
+
+    <TextView
+        android:id="@+id/tvHome14May"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Today"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/viewHomeTask4"
+        app:layout_constraintStart_toStartOf="@+id/viewHomeTask4" />
+
+    <View
+        android:id="@+id/viewHomeTask4"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/et_white_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewHomeTask3" />
+
+    <RadioButton
+        android:id="@+id/btnHomeRadioBackEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewHomeTask4"
+        app:layout_constraintStart_toStartOf="@+id/viewHomeTask4"
+        app:layout_constraintTop_toTopOf="@+id/viewHomeTask4" />
+
+    <TextView
+        android:id="@+id/tvHomeBackEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="01:00 PM"
+        app:layout_constraintStart_toEndOf="@+id/btnHomeRadioBackEnd"
+        app:layout_constraintTop_toTopOf="@+id/btnHomeRadioBackEnd" />
+
+
+    <TextView
+        android:id="@+id/tvHomeBackEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:text="Back End Development"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnHomeRadioBackEnd"
+        app:layout_constraintStart_toEndOf="@+id/btnHomeRadioBackEnd" />
+
+    <Button
+        android:id="@+id/btnHomeAdd"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/ic_add"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
